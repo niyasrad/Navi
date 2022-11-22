@@ -1,0 +1,109 @@
+.screen{
+    padding-top: 81px;
+    height: calc(100vh - 81px);
+    width: 100vw;
+}
+.landing{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.land-logo{
+    height: 40vh;
+}
+.land-drop{
+    height: 40px;
+    width: 40px;
+}
+.bold{
+    font-weight: 500;
+}
+h3{
+    font-size: 25px;
+}
+.features{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.grid-wrapper{
+    margin: auto;
+    width: 70vw;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between
+}
+.features p{
+    padding-top: 20px;
+}
+.community button{
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    background: #000000;
+    color: white;
+    border-radius: 13px;
+}
+.community{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+@media only screen and (max-width: 900px){
+    .land-logo{
+        height: 30vh;
+    }
+    .features p{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+}
+@media only screen and (max-width: 700px){
+    .screen{
+        width: 100vw;
+    }
+    .features{
+        height: auto;
+    }
+    .grid-wrapper{
+        margin: auto;
+        width: 90vw;
+        grid-template-columns:repeat(2, 1fr);
+        gap: 20px;
+    }
+    .faq{
+        height: auto;
+    }
+    .features p{
+        font-size: 18px;
+        padding: 0 30px;
+    }
+    .landing h3{
+        font-size: 20px;
+    }
+
+}
+@media only screen and (max-width: 560px){
+    .grid-wrapper{
+        margin: auto;
+        width: 90vw;
+        grid-template-columns:repeat(1, 1fr);
+        gap: 20px;
+    }
+    .features p{
+        font-size: 14px;
+        padding: 0 30px;
+    }
+    .landing h3{
+        font-size: 18px;
+    }
+}

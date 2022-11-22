@@ -1,0 +1,146 @@
+.navbar{
+    position: fixed;
+    background: white;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.navbar img{
+    width: 80px;
+}
+.navbar button{
+    width: 150px;
+    height: 60px;
+    font-size: 20px;
+    background: #000000;
+    color: white;
+    border-radius: 13px;
+}
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin: 0 50px;
+}
+.dropdown a{
+    display: none;
+}
+.toggle{
+    display: none;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    background: #F3F3F3;
+    border-radius: 12px;
+    text-align: center;
+    margin: auto;
+    padding: 10px 50px;
+    font-size: 20px;
+}
+.card img{
+    width: 100px;
+    height: 100px;
+}
+.faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.faq-flex{
+    background: #F3F3F3;
+    border-radius: 12px;
+    width: 60vw;
+    padding: 0 30px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-flex h3{
+    font-weight: 400;
+    font-size: 20px;
+}
+.faq-flex img{
+    width: 30px;
+    height: 30px;
+}
+.show{
+    padding: 0 30px;
+    width: 60vw;
+    opacity: 100%;
+    display: block;
+    height: auto;
+    text-align: left;
+}
+.showno{
+    display: none;
+    overflow: hidden;
+}
+@media only screen and (max-width: 900px) {
+    .nav{
+        width: 100%;
+    }
+    .nav a{
+        display: none;
+    }
+    .navbar button{
+        display: none;
+    }
+    .dropdown.true{
+        position: fixed;
+        top: 81px;
+        background-color: #D9D9D9;
+        text-align: center;
+        width: 100%;
+    }
+    .dropdown.true a{
+        display: block;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        margin: 50px 0;
+        
+        border-bottom: 1px solid black;
+    }
+    .toggle{
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+    .faq-flex h3{
+        font-size: 18px;
+    }
+    .faq p{
+        font-size: 16px;
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 560px){
+    .faq-flex{
+        width: 80vw;
+        padding: 0 10px;
+    }
+    .faq-flex h3{
+        font-size: 16px;
+    }
+    .faq p{
+        font-size: 14px;
+        padding: 0 30px;
+    }
+    .card{
+        width: 80vw;
+        padding: 0 10px;
+    }
+}
