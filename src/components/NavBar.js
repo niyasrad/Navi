@@ -13,7 +13,7 @@ export default function NavBar(props) {
     return (
         <div>
             <div className="navbar">
-                <img src={logo} alt="logo"/>
+                <img src={logo} className="llogo" alt="logo"/>
                 <div className="nav">
                     <a href="#features">Features</a>
                     <a href="#faq">FAQ</a>
