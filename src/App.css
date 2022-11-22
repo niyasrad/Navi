@@ -1,6 +1,7 @@
 *{
   font-family: 'Alexandria', sans-serif;
   transition: all 0.3s ease-in-out;
+  outline: 1px solid red;
 }
 html{
   scroll-behavior: smooth;

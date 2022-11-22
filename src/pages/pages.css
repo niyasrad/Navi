@@ -1,7 +1,7 @@
 .screen{
     padding-top: 81px;
     height: calc(100vh - 81px);
-    width: 100vw;
+    /* width: 100vw; */
 }
 .landing{
     display: flex;
