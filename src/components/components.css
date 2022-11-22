@@ -1,4 +1,5 @@
 .navbar{
+    z-index: 999;
     position: fixed;
     background: white;
     width: 100vw;
@@ -6,6 +7,7 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid black;
+    padding: 0 5px;
 }
 .navbar img{
     width: 80px;
@@ -15,6 +17,7 @@
     height: 60px;
     font-size: 20px;
     background: #000000;
+    margin-right: 15px;
     color: white;
     border-radius: 13px;
 }
@@ -39,12 +42,16 @@
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    background: #F3F3F3;
+    background:#f2f2f2;
+    box-shadow: -15px -15px 10px #ffffff,15px 15px 10px #e4e4e4;
     border-radius: 12px;
     text-align: center;
     margin: auto;
     padding: 10px 50px;
     font-size: 20px;
+}
+.card:hover{
+    transform: scale(1.1);
 }
 .card img{
     width: 100px;
@@ -58,7 +65,8 @@
     text-align: center;
 }
 .faq-flex{
-    background: #F3F3F3;
+    background:#f2f2f2;
+    box-shadow: -15px -15px 10px #ffffff,15px 15px 10px #e4e4e4;
     border-radius: 12px;
     width: 60vw;
     padding: 0 30px;
@@ -67,7 +75,10 @@
     justify-content: space-between;
     align-items: center;
 }
+.faq-flex:hover{
+    transform: scale(1.1);
 
+}
 .faq-flex h3{
     font-weight: 400;
     font-size: 20px;
@@ -101,16 +112,20 @@
     .dropdown.true{
         position: fixed;
         top: 81px;
-        background-color: #D9D9D9;
+        background-color: white;
         text-align: center;
         width: 100%;
     }
     .dropdown.true a{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-decoration: none;
         color: black;
+        line-height: 70px;
         font-size: 20px;
-        margin: 50px 0;
+
         
         border-bottom: 1px solid black;
     }
