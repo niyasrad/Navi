@@ -19,7 +19,7 @@ export default function NavBar(props) {
                     <a href="#faq">FAQ</a>
                     <a href="#community">Community</a>
                 </div>
-                <button>Contact Us</button>
+                <a href="https://discord.gg/vWwTWESq" target="_blank" rel="noopener noreferrer"><button>Contact Us</button></a>
                 <img src={drop} alt="menu" className="toggle" onClick={handleClick}></img>
             </div>
             <div className={tog?"dropdown true":"dropdown"}>
